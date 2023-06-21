@@ -12,7 +12,30 @@ export default{
             name:'works',
             title:'Works',
             type:'array',
-            of:[{ type:'workExperience'}]
+            of:[
+                {
+                    name:'work',
+                    title:'Work',
+                    type:'document',
+                    fields:[
+                        {
+                            name:'title',
+                            title:'Title',
+                            type:'string'
+                        },
+                        {
+                            name:'company',
+                            title:'Company',
+                            type:'string'
+                        },
+                        {
+                            name:'description',
+                            title:'Description',
+                            type:'string'
+                        }
+                    ]
+                }
+            ]
         },
     ]
 }

@@ -3,7 +3,6 @@ import testimonials from './testimonials'
 import brands from './brands'
 import experiences from './experiences'
 import skills from './skills'
-import workExperience from './workExperience'
 import contact from './contact'
 import resume from './resume'
 
@@ -12,7 +11,6 @@ export const schemaTypes = [
   testimonials,
   brands,
   skills,
-  workExperience,
   experiences,
   contact,
   resume,
