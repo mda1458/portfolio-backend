@@ -4,38 +4,49 @@ export default{
     type: 'document',
     fields:[
         {
-            name:'year',
-            title:'Year',
+            name:'from',
+            title:'From',
+            type:'date'
+        },
+        {
+            name:'to',
+            title:'To',
+            type:'date'
+        },
+        {
+            name:'imgUrl',
+            title:'ImageUrl',
+            type:'image',
+            options:{
+                hotspot:true
+            }
+        },
+        {
+            name:'title',
+            title:'Title',
             type:'string'
         },
         {
-            name:'works',
-            title:'Works',
+            name:'company',
+            title:'Company',
+            type:'string'
+        },
+        {
+            name:'description',
+            title:'Description',
+            type:'string'
+        },
+        {
+            name:'achievements',
+            title:'Achievements',
             type:'array',
             of:[
                 {
-                    name:'work',
-                    title:'Work',
-                    type:'document',
-                    fields:[
-                        {
-                            name:'title',
-                            title:'Title',
-                            type:'string'
-                        },
-                        {
-                            name:'company',
-                            title:'Company',
-                            type:'string'
-                        },
-                        {
-                            name:'description',
-                            title:'Description',
-                            type:'string'
-                        }
-                    ]
+                    name:'achievement',
+                    title:'Achievement',
+                    type:'string'
                 }
             ]
-        },
+        }
     ]
 }
